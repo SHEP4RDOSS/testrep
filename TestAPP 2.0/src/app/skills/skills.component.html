@@ -1,0 +1,7 @@
+<div id="skills">
+    <h2>Навыки: </h2>
+    <ul *ngFor="let item of obj">
+     <h3>{{item.title}}</h3>
+     <h4>сертификат/диплом : {{item.certfs.title}} <br/> получен в : {{item.certfs.place}} , {{item.certfs.date | date}}</h4>
+    </ul>
+</div>

@@ -1,0 +1,9 @@
+<div *ngFor="let item of  paints">
+    <img (click)='about(item.id)'  src={{item.img}}>
+    
+</div>
+<div *ngIf="isopen">
+    <div>
+        <h4>название - {{info.title}}   год написания - {{info.year}}  автор - {{info.author}}   размер - {{info.size}}   размер - {{info.place}}</h4>
+    </div>
+</div>>

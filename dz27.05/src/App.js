@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
 
-//                                                                 //Ex1
 export default function App() {
-
-
   let tmp = null;
   const [time, setTime] = useState(0);
   const [startflag, setstartflag] = useState(false);
-
 
   useEffect(() => {
    if(startflag===true){
@@ -19,7 +15,6 @@ export default function App() {
       }
   });
  
-
   const func=(e)=>{e.preventDefault();    setstartflag(true);}
 
   const timeAction=()=>{
@@ -54,9 +49,9 @@ export default function App() {
     <form onSubmit={func}>
       <input type = "text" value={time} onChange={timeChanger}></input>
       <br></br>
-      <input type = "submit" value = "Start"></input>
-      <input type = "button" value="Stop" onClick={timeStop}></input>
-      <input type = "button" value ="Pause" onClick={timePause}></input>
+      <input type = "submit" value = "Старт"></input>
+      <input type = "button" value="Стоп" onClick={timeStop}></input>
+      <input type = "button" value ="Пауза" onClick={timePause}></input>
     </form>
   );
 }
